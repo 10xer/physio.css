@@ -1,0 +1,168 @@
+/*
+* Physio V0.0.0
+* Copyright 2018, Sean Kilgarriff
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 03/05/2018
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Variables
+- Base Styles
+- Typography
+- Grid
+- Base Styles
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Small devices (landscape phones, 576px and up) */
+@custom-media --small (min-width: 576px);
+
+/* Medium devices (tablets, 768px and up) */
+@custom-media --medium (min-width: 768px);
+
+/* Large devices (desktops, 992px and up) */
+@custom-media --large (min-width: 992px);
+
+/* Extra large devices (large desktops, 1200px and up) */
+@custom-media --extra-large (min-width: 1200px);
+
+/* Fonts */
+:root {
+  --main-font: ;
+  --header-font: ;
+  --base-font-stack: system-ui;
+  --main-font-stack: var(--main-font), var(--base-font-stack);
+  --header-font-stack: var(--header-font), var(--base-font-stack);
+
+  /* Colors */
+  --white: var(--oc-gray-0);
+
+  /* Font Colors */
+  --base-font-color: var(--oc-gray-7);
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--base-font-color);
+  font-family: var(--main-font-stack);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font-stack);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: -0.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -0.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.05rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* Larger than phablet */
+@media (--small) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}

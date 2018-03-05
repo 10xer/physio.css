@@ -1,0 +1,19 @@
+{
+  "name": "physio.css",
+  "version": "0.0.0",
+  "description": "A CSS framework to help realign your projects",
+  "main": "physio.css",
+  "scripts": {
+    "test": "stylelint physio.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10xer/physio.css.git"
+  },
+  "author": "Kilpatty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/10xer/physio.css/issues"
+  },
+  "homepage": "https://github.com/10xer/physio.css#readme"
+}
